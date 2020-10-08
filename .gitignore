@@ -1,4 +1,3 @@
 # .gitignore
-.idea
 node-modules/
 dist/
