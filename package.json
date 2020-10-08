@@ -20,6 +20,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-strip-debug": "^3.0.0",
-    "sassy-normalize": "^8.0.5"
+    "sassy-normalize": "^8.0.5",
+    "bl": ">=1.2.3"
   }
 }
