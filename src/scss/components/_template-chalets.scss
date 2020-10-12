@@ -1,5 +1,6 @@
 .tem-chalet-hero{
-  background: url("../../images/tem-chalet-hero-380w.png");
+  background-image: url("../../images/tem-chalet-hero-380w.png");
+  background-size: cover;
   height: 399px;
 
   display: flex;
@@ -58,7 +59,7 @@
     background: $white;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     padding: 0 0 40px 0 ;
@@ -70,6 +71,7 @@
       text-align: center;
       background: $white;
       border: 1px solid $dark-shade;
+      text-transform: uppercase;
     }
 
 
@@ -161,3 +163,166 @@
   }
 
 }
+
+@media screen and (min-width: $vw-small){
+
+  .tem-chalet-hero {
+    background-image: url("../../images/tem-chalet-hero-768w.png");
+    height: 800px;
+
+    h2{
+      font-size: rem(64);
+
+    }
+
+  }
+
+
+  .tem-chalet-info{
+
+   div p{
+      width: 682px;
+      top: 80px;
+     font-size: rem(24);
+     padding: 45px;
+    }
+
+    div picture{
+      margin: 260px;
+    }
+
+  }
+
+  .tem-chalet-liste-chalets{
+  .temp-chalet-un-chalet{
+    width: 679px;
+    height: 844px;
+
+    padding: 0;
+
+    h4{
+      font-size: rem(48);
+    }
+
+    button{
+      width: 458px;
+
+    }
+
+
+    .un-chalet-icones{
+
+
+      .un-chalet-une-icone{
+      width: 148px;
+      margin: 15px 20px;
+      p{
+        font-size: rem(22);
+      }
+
+      svg{
+        width: 63px;
+        height: 63px;
+      }
+
+    }
+
+      .un-chalet-une-icone-indisponible{
+
+        width: 402px;
+        p{
+          font-size: rem(22);
+          padding: 0 0 30px 0;
+        }
+
+        svg{
+          width: 63px;
+          height: 63px;
+        }
+      }
+    }
+  }
+}
+
+  .tem-chalet-bloc-sanitaire{
+
+    h3{
+      font-size: rem(56);
+      margin: 40px 0 40px 0;
+    }
+
+    div p {
+      width: 678px;
+      padding: 40px;
+      font-size: rem(24);
+    }
+  }
+
+
+}
+
+@media screen and (min-width: $vw-large){
+
+
+  .tem-chalet-hero{
+    background-image: url("../../images/tem-chalet-hero.png");
+    background-size: cover;
+
+
+  }
+
+  .tem-chalet-info{
+
+    margin: 80px 0;
+
+    div{
+      flex-direction: row;
+      justify-content: flex-end;
+
+      p{
+        width: 886px;
+        top: 150px;
+        left: 100px;
+        padding: 100px;
+      }
+
+      picture{
+        margin: 100px;
+      }
+
+    }
+  }
+
+  .tem-chalet-liste-chalets{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .temp-chalet-un-chalet{
+      margin: 20px;
+    }
+  }
+
+  .tem-chalet-bloc-sanitaire{
+
+    div{
+
+      flex-direction: row;
+      justify-content: flex-start;
+
+      p{
+        top: 200px;
+        right: 100px;
+        width: 858px;
+        padding: 80px;
+      }
+
+      picture{
+        margin: 50px 100px;
+      }
+
+    }
+
+  }
+
+}
+
