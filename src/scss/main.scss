@@ -46,9 +46,7 @@
 @import "components/section-images";
 @import "components/formulaire-inscription";
 @import "components/formulaire-commentaires";
-@import "components/template-chalets";
-@import "components/single-chalet";
-@import "components/template-activites";
+
 
 
 
@@ -62,3 +60,7 @@
 // PAGES
 // Pages inclues dans le projet
 @import "pages/front-page";
+@import "pages/template-chalets";
+@import "pages/single-chalet";
+@import "pages/template-activites";
+@import "pages/single-activite";

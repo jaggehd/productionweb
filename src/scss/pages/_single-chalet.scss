@@ -137,3 +137,15 @@
   }
 
 }
+
+@media screen and (min-width: $vw-huge){
+
+  .single-chalet-gallerie{
+
+    img{
+      width: auto;
+      height: 766px;
+    }
+
+  }
+}
