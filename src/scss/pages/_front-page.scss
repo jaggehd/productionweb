@@ -1,0 +1,114 @@
+// SECTIONS
+
+
+section.info-vente{
+  display:flex;
+  justify-content: center;
+  margin-bottom:15em;
+      div.wrapper{
+        width:75%;
+        span{
+          color: $accent-color;
+        }
+        h3{
+          padding-right:10em;
+          font-weight: $fw-medium;
+        }
+      p{
+        padding-left: 10em;
+        padding-right:9em;
+        text-transform: uppercase;
+      }
+  }
+}
+
+
+section.contenu{
+  background-color: $light-shade;
+  margin-top:5em;
+
+  div.wrapper{
+
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    article{
+
+      display:flex;
+      flex-direction: column;
+      align-items:center;
+      margin: -6em 1em 1em 1em;
+      width:20%;
+      box-shadow: 6px 7px 17px rgba(26, 22, 49, 0.2);
+      img{
+        width:100%;
+      }
+      a{
+        background-color: $white2;
+      }
+      div{
+        background-color: $white2;
+        width:100%;
+        h2{
+          font-family: $ff-title;
+          font-weight: $fw-semibold;
+          font-style: italic;
+          font-size: $fz-h2-custom;
+          padding-left:0.5em;
+          margin-top:0.5em;
+
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+section.info-accueil{
+  background-color: $light-shade;
+  display:flex;
+  justify-content:center;
+  padding: 10em 0 5em 0;
+  div.wrapper{
+
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:center;
+    max-width:100%;
+    iframe{
+      margin-top: -8em;
+      z-index: 1;
+    }
+    div {
+
+      width: 50%;
+      background-color: $color-bg-page;
+      box-shadow: 6px 7px 17px rgba(26, 22, 49, 0.2);
+      z-index: 3;
+
+
+
+      h3 {
+        font-size: rem(36);
+        text-transform: uppercase;
+        margin-bottom:0;
+        font-weight: $fw-medium;
+        text-align: center;
+      }
+      p{
+        background: $white;
+        font-size: rem(16);
+        padding:1em 5em 2em 5em;
+      }
+      span{
+        color: $accent-color;
+      }
+    }
+  }
+}
