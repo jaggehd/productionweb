@@ -333,6 +333,7 @@ p {
     flex-direction: row;
     padding: 80px 100px;
 
+
     .menu-menu-princ-logo {
       width: 441px;
       height: 359px;
@@ -419,5 +420,14 @@ p {
       }
     }
   }
+}
+
+@media screen and (min-width: $vw-huge) {
+
+
+  .footer{
+    padding: 50px 700px;
+  }
+
 }
 
