@@ -1,0 +1,305 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.footer {
+  background-color: $dark-shade;
+
+  color: $light-shade;
+
+  padding: 30px 40px;
+
+  a {
+    color: $light-shade;
+  }
+
+  .footer-a-propos-text {
+    max-width: 230px;
+    margin-bottom: 20px;
+  }
+
+  .footer-a-propos-link {
+    font-family: $ff-title;
+    font-style: italic;
+
+    border-bottom: 1px solid $accent-color;
+
+    padding-bottom: 10px;
+  }
+
+  .footer-menu-langue {
+    border-bottom: 1px solid $accent-color;
+
+    padding-bottom: 5px;
+  }
+
+  .footer-logo {
+    width: 125px;
+    height: 100px;
+
+    margin-bottom: 25px;
+  }
+
+  .menu-elements {
+    margin-top: 45px;
+
+    a {
+      text-transform: uppercase;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    li:nth-last-child(1) a {
+      color: $accent-color;
+    }
+
+  }
+
+
+  .footer-image-langue {
+    display: none;
+  }
+
+  .footer-copyrights {
+    text-align: center;
+
+    margin: 20px 0 20px;
+  }
+
+}
+
+.menu-menu-princ-overlay {
+  background-color: $dark-shade;
+
+  font-family: $ff-title;
+  font-style: italic;
+
+  //display: flex;
+  display: none;
+  flex-direction: column;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 9;
+
+  padding: 35px 35px;
+
+  a {
+    color: $white;
+  }
+
+  .menu-menu-princ-logo {
+    width: 140px;
+    height: 111px;
+  }
+
+  .menu-menu-princ-hamburger {
+    position: absolute;
+    top: 75px;
+    right: 75px;
+
+
+    transform: rotate(-90deg);
+  }
+
+  .menu-elements {
+
+    li:nth-last-child(1) a {
+      font-weight: 600;
+    }
+
+    a {
+      font-weight: 200;
+      text-transform: uppercase;
+    }
+  }
+
+  .menu-contacts {
+    display: none;
+
+    a {
+      font-weight: 300;
+      line-height: 250%;
+    }
+
+    li {
+      display: flex;
+      justify-content: left;
+      align-content: center;
+
+      margin-bottom: 10px;
+
+    }
+
+    svg {
+      width: 50px;
+
+      margin-right: 10px;
+    }
+  }
+
+  .menu-menu-princ-langue {
+
+    font-family: $ff-normal;
+    font-style: normal;
+    font-size: $fz-h4;
+    text-transform: none;
+
+
+    color: $white;
+
+    border-bottom: 1px solid $accent-color;
+
+    padding-bottom: 5px;
+
+  }
+
+  .menu-langue-desktop {
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width: $vw-small) {
+
+  .menu-menu-princ-overlay {
+    padding: 60px 40px;
+
+    .menu-menu-princ-logo {
+      width: 227px;
+      height: 185px;
+    }
+  }
+
+  .footer {
+    display: flex;
+
+    .footer-a-propos {
+      margin-right: 15%;
+    }
+
+    .menu-footer {
+      position: relative;
+
+      padding-left: 15%;
+    }
+
+    .menu-footer:after {
+      content: "";
+
+      background: $white;
+
+      position: absolute;
+      bottom: 33%;
+      left: 0;
+      height: 50%;
+      width: 1px;
+    }
+  }
+}
+
+
+@media screen and (min-width: $vw-large) {
+
+  .menu-menu-princ-overlay {
+    flex-direction: row;
+    padding: 80px 100px;
+
+    .menu-menu-princ-logo {
+      width: 441px;
+      height: 359px;
+    }
+
+    .menu-elements a {
+      font-size: $fz-h2;
+    }
+
+    .menu-menu-princ-left {
+      margin-right: 15%;
+    }
+
+    .menu-contacts {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-menu-princ-langue {
+      font-size: $fz-menu-custom;
+    }
+
+    .menu-langue-mobile{
+      display:none;
+    }
+    .menu-langue-desktop{
+      display:inline-block;
+    }
+  }
+
+  .footer {
+
+    position: relative;
+
+    .footer-a-propos-text {
+      font-size: $fz-h5;
+    }
+
+    .footer-a-propos-link {
+      font-size: $fz-h4;
+    }
+
+    .menu-footer {
+
+      .footer-menu-langue {
+        display: none;
+      }
+
+      .menu-elements li a {
+        font-size: $fz-h4;
+      }
+    }
+
+    .footer-image-langue {
+
+      display: flex;
+
+      position: absolute;
+
+      right: 0;
+      bottom: 0;
+      top: 0;
+
+      .footer-langue {
+
+        background: $white2;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        height: 15%;
+
+        padding: 10px 20px;
+
+        .footer-langue-bouton {
+          color: $dark-shade;
+
+          font-size: $fz-menu-custom;
+
+        }
+      }
+    }
+  }
+}
+

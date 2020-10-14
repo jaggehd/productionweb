@@ -1,0 +1,47 @@
+.page-erreur-content{
+
+  background: url("../images/background-image-1920w.jpg");
+
+  padding: 10% 15% 15%;
+
+  h1,h2,h3{
+    margin:0;
+    color: $white;
+
+    text-shadow: 2px 2px $dark-shade ;
+  }
+
+  h2{
+    font-size: $fz-h4;
+  }
+  h3{
+    font-size: $fz-h5;
+  }
+
+}
+
+@media screen and(min-width:$vw-small){
+
+
+
+
+}
+
+
+@media screen and(min-width:$vw-large){
+
+  .page-erreur-content{
+
+    h1{
+      font-size: $fz-404-custom;
+    }
+    h2{
+      font-size: $fz-h2;
+    }
+    h3{
+      font-size: $fz-h3;}
+
+  }
+
+
+}

@@ -182,5 +182,32 @@
     }
   }
 
+  .calendrier-pêche{
+
+    h3{
+      font-size: rem(68);
+    }
+    .une-periode{
+
+      h5{
+        font-size: rem(48);
+        padding: 50px;
+      }
+
+      .contenu-periode{
+
+        padding: 50px;
+        h6{
+          font-size: rem(36);
+        }
+
+        p{
+          font-size: rem(36);
+        }
+
+      }
+    }
+  }
+
 
 }
