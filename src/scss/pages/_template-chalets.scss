@@ -6,12 +6,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position:relative;
+  z-index:-1;
+
+
+  &::before{
+    content: '';
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.3);
+    height:100%;
+    z-index:1;
+
+  }
 
   h2{
     font-weight: $fw-extra-light;
     font-style: italic;
     font-size: rem(36);
     color: $white2;
+    z-index:2;
+
   }
 }
 
@@ -25,8 +43,8 @@
 
 .tem-chalet-info{
 
-
   position: relative;
+
   div{
 
     display: flex;

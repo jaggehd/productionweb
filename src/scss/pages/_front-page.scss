@@ -1,5 +1,78 @@
-// SECTIONS
+// HEADER
+header.h-accueil{
 
+  position:absolute;
+  right:0;
+  width:40vw;
+  background-color: $white2;
+    div{
+      display:flex;
+      justify-content: space-between;
+      padding:2em;
+      z-index:2;
+
+      h4{
+        margin: 3px 0 0 0;
+        font-family: $ff-normal;
+        font-weight: $fw-light;
+      }
+      a{
+        //z-index:999;
+      }
+    }
+}
+
+// SECTION HERO
+
+section.hero-accueil{
+  height:800px;
+  background-color: $light-shade;
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:5em;
+
+  div.left-side{
+    padding:4em;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    img{
+      width:30%;
+    }
+    p{
+      width:78%;
+      font-size: $fz-h5;
+      line-height: $lh-large;
+      padding-top: 5em;
+      color: $dark-shade;
+      font-family: $ff-title;
+    }
+    a{
+      text-transform: uppercase;
+      color: $accent-color;
+      transition: $global-transition;
+    &:hover{
+      color:$dark-shade;
+      transition: $global-transition;
+    }
+    }
+  }
+
+  div.right-side {
+      display:flex;
+    align-items: flex-end;
+
+    img {
+      height:695px;
+      width: 1025px;
+      z-index:3;
+      box-shadow: -12px -12px 44px rgba(26, 22, 49, 0.21);
+    }
+  }
+}
+
+// SECTION VENTE
 
 section.info-vente{
   display:flex;
@@ -22,6 +95,7 @@ section.info-vente{
   }
 }
 
+// SECTION CONTENU
 
 section.contenu{
   background-color: $light-shade;
@@ -35,7 +109,7 @@ section.contenu{
     justify-content: center;
 
     article{
-
+      background-color: $white2;
       display:flex;
       flex-direction: column;
       align-items:center;
@@ -49,7 +123,6 @@ section.contenu{
         background-color: $white2;
       }
       div{
-        background-color: $white2;
         width:100%;
         h2{
           font-family: $ff-title;
@@ -66,7 +139,7 @@ section.contenu{
   }
 }
 
-
+// SECTION INFO
 
 
 section.info-accueil{
@@ -112,3 +185,13 @@ section.info-accueil{
     }
   }
 }
+
+section.pecheurs{
+  display:flex;
+  justify-content:center;
+
+  
+}
+
+//MENU
+

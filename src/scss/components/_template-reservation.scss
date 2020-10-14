@@ -54,7 +54,8 @@ p {
 
     li {
       margin: 5px 0;
-    }
+
+          }
 
     li:nth-last-child(1) a {
       color: $accent-color;
@@ -74,48 +75,90 @@ p {
   }
 }
 
+#toggle{
+  z-index:999;
+  transition: $global-transition;
+  transform: translateY(0) translateX(0) rotate(0deg);
+
+  &:hover{
+    color: $accent-color;
+    transition:$global-transition;
+  }
+  &.active {
+    position:fixed;
+    right:2em;
+
+    .iconify {
+      transform: translateY(0) translateX(0) rotate(270deg) !important;
+      color:$white !important;
+      transition: $global-transition;
+
+    &:hover{
+      color: $accent-color !important;
+      transition:$global-transition;
+    }
+    }
+  }
+}
+
 .menu-menu-princ-overlay {
   background-color: $dark-shade;
 
   font-family: $ff-title;
   font-style: italic;
-
-  //display: flex;
-  display: none;
-
+  width: 100%;
+  height: 0%;
+  opacity:0;
+  display: flex;
+  //display: none;
   flex-direction: column;
-
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-
   z-index: 9;
-
   padding: 35px 35px;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  &.open{
+    opacity: 1;
 
+    visibility: visible;
+    height: 100%;
+    overflow:hidden !important;
+
+  }
   a {
     color: $white;
+    transition: all ease 300ms;
+  &:hover{
+    color: $accent-color;
+    transition: all ease 300ms;
+
   }
+  }
+
 
   .menu-menu-princ-logo {
     width: 140px;
     height: 111px;
   }
 
-  .menu-menu-princ-hamburger {
-    position: absolute;
-    top: 75px;
-    right: 75px;
-
-
-    transform: rotate(-90deg);
-  }
+  //.menu-menu-princ-hamburger {
+  //  position: absolute;
+  //  top: 32px;
+  //  right: 33px;
+  //
+  //
+  //  //transform: rotate(-90deg);
+  //}
 
   .menu-elements {
 
     li:nth-last-child(1) a {
       font-weight: 600;
+
     }
 
     a {
@@ -173,6 +216,7 @@ p {
 .header {
   background-color: $dark-shade;
   position: relative;
+
 
   height: 250px;
 

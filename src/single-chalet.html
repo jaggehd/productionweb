@@ -19,22 +19,17 @@
     <div class="header-content">
         <img class="header-logo" src="images/logo.svg" alt="Logo Pourvoirie Lac-du-cerf">
         <div class="header-menu-bouton">
-            <a href="" class="header-reservez-link">Réservez maintenant</a>
-            <a href="" class="header-hamburger"><span class="iconify" data-inline="false" data-icon="clarity:menu-line"
+            <a href="#" class="header-reservez-link">Réservez maintenant</a>
+            <a href="#" class="header-hamburger" id="toggle"><span class="iconify" data-inline="false" data-icon="clarity:menu-line"
                                                                style="font-size: 32px;"></span></a>
         </div>
     </div>
 
 </header>
 
-<div class="menu-menu-princ-overlay">
-
-    <a href="" class="menu-menu-princ-hamburger"><span class="iconify" data-inline="false" data-icon="clarity:menu-line"
-                                                       style="color: #ffffff; font-size: 32px;"></span></a>
+<div class="menu-menu-princ-overlay" id="overlay">
     <div class="menu-menu-princ-left">
-
-        <a href=""><img class="menu-menu-princ-logo" src="images/logo.svg" alt="Logo Pourvoirie Lac-du-cerf"></a>
-
+        <a href="front-page.html"><img class="menu-menu-princ-logo" src="images/logo.svg" alt="Logo Pourvoirie Lac-du-cerf"></a>
         <ul class="menu-contacts">
             <li class="menu-contacts-elems"><span class="iconify" data-inline="false" data-icon="bi:telephone"
                                                   style="color: #69b966; font-size: 40px;"></span> <a
@@ -47,25 +42,22 @@
                                                   style="color: #69b966; font-size: 48px;"></span> <a href="">17 chemin
                 filion, Lac-du-cerf, QC, J0W1S0</a></li>
         </ul>
-        <a href="" class="menu-langue-desktop menu-menu-princ-langue">En</a>
+        <a href="#" class="menu-langue-desktop menu-menu-princ-langue">En</a>
     </div>
-
     <div class="menu-menu-princ-right">
         <ul class="menu-elements">
-            <li><a href="">Nos Chalets</a></li>
-            <li><a href="">Pêche</a></li>
-            <li><a href="">VTT / Motoneige</a></li>
-            <li><a href="">Villégiature</a></li>
-            <li><a href="">À propos</a></li>
-            <li><a href="">Nos tarifs</a></li>
-            <li><a href="">Contactez-nous</a></li>
-            <li><a href="">Quoi apporter?</a></li>
-            <li><a href="">Réservez maintenant</a></li>
+            <li data-animation="fadeInLeft" data-animation-delay="1s" class="animateMe"><a href="template-chalets.html">Nos Chalets</a></li>
+            <li data-animation="fadeInLeft" data-animation-delay="1.2s" class="animateMe"><a href="template-activites.html">Pêche</a></li>
+            <li data-animation="fadeInLeft" data-animation-delay="1.5s" class="animateMe"><a href="template-activites.html">VTT / Motoneige</a></li>
+            <li data-animation="fadeInLeft" data-animation-delay="1.8s" class="animateMe"><a href="#">Villégiature</a></li>
+            <li data-animation="fadeInLeft" data-animation-delay="2s" class="animateMe"><a href="#">À propos</a></li>
+            <li data-animation="fadeInLeft" data-animation-delay="2.2s" class="animateMe"><a href="#">Nos tarifs</a></li>
+            <li data-animation="fadeInLeft" data-animation-delay="2.4s" class="animateMe"><a href="#">Contactez-nous</a></li>
+            <li data-animation="fadeInLeft" data-animation-delay="2.6s" class="animateMe"><a href="#">Quoi apporter?</a></li>
+            <li data-animation="fadeInLeft" data-animation-delay="2.9s" class="animateMe"><a href="#">Réservez maintenant</a></li>
         </ul>
-
-        <a href="" class="menu-langue-mobile menu-menu-princ-langue">En</a>
+        <a href="#" class="menu-langue-mobile menu-menu-princ-langue">En</a>
     </div>
-
 </div>
 
 <div class="wrapper">
@@ -111,7 +103,7 @@
             <p>capacité de 5 personnes</p>
         </div>
     </section>
-
+<div class="wrapper">
     <section class="single-chalet-gallerie animateMe" data-animation="fadeInLeft">
 
     <img src="images/retraite5.png" alt="Le retraité photo 1">
@@ -121,7 +113,7 @@
 
 
 </section>
-
+</div>
 <footer class="footer">
 
     <div class="footer-a-propos">
@@ -165,5 +157,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
 </body>
 </html>
