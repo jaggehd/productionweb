@@ -7,11 +7,11 @@
     <title>Indiquer le titre de la page</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,700&family=Spectral:ital,wght@0,200;0,400;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
     <link rel="stylesheet" href="css/main.css">
 
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
@@ -60,11 +60,11 @@
 </div>
 
 <section class="tem-chalet-hero">
-    <h2 class="animate__fadeInLeft">NOS CHALETS</h2>
+    <h2 class="animateMe" data-animation="fadeInLeft">NOS CHALETS</h2>
 </section>
 
 <div class="wrapper">
-    <section class="tem-chalet-info">
+    <section class="tem-chalet-info animateMe" data-animation="fadeInLeft">
 
         <div>
             <p>Le site de la Pourvoirie Lac-du-Cerf, compte 12 chalets dont, présentement, 6 qui contiennent toutes les
@@ -87,7 +87,7 @@
 
     <section class="tem-chalet-liste-chalets">
 
-        <div class="temp-chalet-un-chalet">
+        <div class="temp-chalet-un-chalet animateMe" data-animation="fadeIn">
 
             <picture>
                 <source media="(max-width: 599px)" srcset="images/pas-photo-chalet-380w.png">
@@ -125,7 +125,7 @@
         </div>
 
 
-        <div class="temp-chalet-un-chalet">
+        <div class="temp-chalet-un-chalet animateMe" data-animation="fadeIn">
 
             <picture>
                 <source media="(max-width: 599px)" srcset="images/le-western-380w.png">
@@ -162,7 +162,7 @@
 
         </div>
 
-        <div class="temp-chalet-un-chalet">
+        <div class="temp-chalet-un-chalet animateMe" data-animation="fadeIn">
 
             <picture>
                 <source media="(max-width: 599px)" srcset="images/pas-photo-chalet-380w.png">
@@ -187,7 +187,7 @@
 
         </div>
 
-        <div class="temp-chalet-un-chalet">
+        <div class="temp-chalet-un-chalet animateMe" data-animation="fadeIn">
 
             <picture>
                 <source media="(max-width: 599px)" srcset="images/le-retraite-380w.png">
@@ -224,7 +224,7 @@
 
         </div>
 
-        <div class="temp-chalet-un-chalet">
+        <div class="temp-chalet-un-chalet animateMe" data-animation="fadeIn">
 
             <picture>
                 <source media="(max-width: 599px)" srcset="images/place-a-party-380w.png">
@@ -261,7 +261,7 @@
 
         </div>
 
-        <div class="temp-chalet-un-chalet">
+        <div class="temp-chalet-un-chalet animateMe" data-animation="fadeIn">
 
             <picture>
                 <source media="(max-width: 599px)" srcset="images/le-rustique-380w.png">
@@ -299,7 +299,7 @@
         </div>
 
 
-        <div class="temp-chalet-un-chalet">
+        <div class="temp-chalet-un-chalet animateMe" data-animation="fadeIn">
 
             <picture>
                 <source media="(max-width: 599px)" srcset="images/le-famillial-380w.png">
@@ -337,7 +337,7 @@
         </div>
 
 
-        <div class="temp-chalet-un-chalet">
+        <div class="temp-chalet-un-chalet animateMe" data-animation="fadeIn">
 
             <picture>
                 <source media="(max-width: 599px)" srcset="images/le-solitaire-380w.png">
@@ -362,7 +362,7 @@
 
         </div>
 
-        <div class="temp-chalet-un-chalet">
+        <div class="temp-chalet-un-chalet animateMe" data-animation="fadeIn">
 
             <picture>
                 <source media="(max-width: 599px)" srcset="images/pas-photo-chalet-380w.png">
@@ -387,7 +387,7 @@
 
         </div>
 
-        <div class="temp-chalet-un-chalet">
+        <div class="temp-chalet-un-chalet animateMe" data-animation="fadeIn">
 
             <picture>
                 <source media="(max-width: 599px)" srcset="images/le-romantique-380w.png">
@@ -425,7 +425,7 @@
         </div>
     </section>
 
-    <section class="tem-chalet-bloc-sanitaire">
+    <section class="tem-chalet-bloc-sanitaire animateMe" data-animation="fadeInLeft">
 
         <h3>Le bloc sanitaire</h3>
         <div>
@@ -495,5 +495,9 @@
 
 
     </footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 </body>
 </html>

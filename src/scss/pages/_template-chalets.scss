@@ -15,6 +15,14 @@
   }
 }
 
+.animateMe{
+  opacity: 0;
+}
+
+.animateMe .animated{
+  opacity: 1;
+}
+
 .tem-chalet-info{
 
 
@@ -70,13 +78,14 @@
       background: $white;
       border: 1px solid $dark-shade;
       text-transform: uppercase;
+      margin: 35px 0 0 0;
     }
 
     a:hover{
       button{
         background: $dark-shade;
         color: $white2;
-        margin: 10px 0 0 0;
+        margin: 45px 0 0 0;
       }
 
 
