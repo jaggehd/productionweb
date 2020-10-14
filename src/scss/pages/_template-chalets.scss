@@ -157,12 +157,14 @@
       margin: 450px 0 0 0;
     }
 
-    .gras-vert{
-      color: $accent-color;
-    }
+
   }
 
 }
+
+.gras-vert{
+   color: $accent-color;
+ }
 
 @media screen and (min-width: $vw-small){
 
@@ -323,6 +325,13 @@
     }
 
   }
+
+}
+
+@media screen and (min-width: $vw-large){
+
+
+
 
 }
 
