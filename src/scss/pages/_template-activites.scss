@@ -92,3 +92,14 @@
     }
   }
 }
+
+
+@media screen and (min-width: $vw-huge) {
+  .tem-activite-description {
+    p {
+      font-size: rem(36);
+      width: 1000px;
+    }
+  }
+
+}

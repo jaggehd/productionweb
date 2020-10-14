@@ -44,7 +44,9 @@
 
 }
 
-
+.animate__fadeInLeft{
+  animation-delay: 2s;
+}
 
 .tem-chalet-liste-chalets{
   padding: 20px;
@@ -74,6 +76,18 @@
       text-transform: uppercase;
     }
 
+    a:hover{
+      button{
+        background: $dark-shade;
+        color: $white2;
+        margin: 10px 0 0 0;
+      }
+
+
+      .temp-chalet-un-chalet{
+        box-shadow: $box-shadow-hover;
+      }
+    }
 
     h4{
       text-transform: uppercase;
@@ -206,6 +220,8 @@
       font-size: rem(48);
     }
 
+
+
     button{
       width: 458px;
 
@@ -328,7 +344,7 @@
 
 }
 
-@media screen and (min-width: $vw-large){
+@media screen and (min-width: $vw-huge){
 
 
 
