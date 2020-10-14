@@ -36,6 +36,9 @@
 
 
 
+//
+
+
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
@@ -46,6 +49,10 @@
 @import "components/section-images";
 @import "components/formulaire-inscription";
 @import "components/formulaire-commentaires";
+
+@import "components/template-contact";
+@import "components/template-reservation";
+
 
 
 
@@ -64,3 +71,4 @@
 @import "pages/single-chalet";
 @import "pages/template-activites";
 @import "pages/single-activite";
+@import "pages/404";
