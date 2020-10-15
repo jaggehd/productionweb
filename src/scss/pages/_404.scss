@@ -1,6 +1,6 @@
 .page-erreur-content{
 
-  background: url("../images/background-image-1920w.jpg");
+  z-index:2;
 
   padding: 10% 15% 15%;
 
@@ -10,6 +10,11 @@
 
     text-shadow: 2px 2px $dark-shade ;
   }
+  h1{
+    font-size: $fz-h1-custom;
+    font-style: italic;
+  }
+
 
   h2{
     font-size: $fz-h4;
@@ -20,6 +25,18 @@
 
 }
 
+div.background{
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow-x:hidden;
+  filter: blur(3px);
+  background: url("../images/background-image-1920w.jpg") $dark-shade;
+  z-index: -1;
+}
 @media screen and(min-width:$vw-small){
 
 

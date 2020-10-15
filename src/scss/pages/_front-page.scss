@@ -65,7 +65,8 @@ section.hero-accueil{
 
     img {
       height:695px;
-      width: 1025px;
+      //width: 1025px;
+      width: 60em;
       z-index:3;
       box-shadow: -12px -12px 44px rgba(26, 22, 49, 0.21);
     }
@@ -115,8 +116,20 @@ section.contenu{
       align-items:center;
       margin: -6em 1em 1em 1em;
       width:20%;
+      transition: $global-transition;
       box-shadow: 6px 7px 17px rgba(26, 22, 49, 0.2);
-      img{
+
+      &:hover {
+
+        transform: translate(0, -1em);
+        transition: $global-transition;
+
+        & h2{
+          color: $accent-color;
+          transition: $global-transition;
+        }
+      }
+        img{
         width:100%;
       }
       a{
@@ -131,6 +144,7 @@ section.contenu{
           font-size: $fz-h2-custom;
           padding-left:0.5em;
           margin-top:0.5em;
+
 
         }
       }
@@ -186,12 +200,424 @@ section.info-accueil{
   }
 }
 
+//SECTION PÊCHEUR
+
 section.pecheurs{
   display:flex;
   justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  margin-bottom:7em;
+  div.wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width: 75%;
+    overflow: hidden;
+    box-sizing:border-box;
 
-  
+
+    img{
+      width: 300px;
+      box-shadow: 6px 7px 17px rgba(26, 22, 49, 0.2);
+    }
+
+    div.item{
+      margin:1em;
+      transition: $global-transition;
+      &:hover{
+
+        transform: scale(1.05) translate(0, -5px);
+        transition: $global-transition;
+
+      }
+    }
+    div.upper, div.lower{
+      animation: carousel 25s linear infinite;
+      white-space: nowrap;
+      will-change: transform;
+      display:flex;
+      flex-direction:row;
+      animation-play-state: paused;
+
+      justify-content: space-around;
+      &:hover{
+        animation-play-state: running;
+      }
+
+    }
+  }
+  div.title{
+
+    display:block;
+    width:75%;
+    margin-bottom: 5em;
+
+    h1{
+      text-transform: none;
+      font-weight: $fw-regular;
+      font-style: italic;
+      margin: -0.7em auto;
+    }
+
+  }
+
 }
+
+//SECTION PUB
+
+section.pub{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:5em;
+  div.left-side{
+
+    width:50%;
+    padding-left:7em;
+    h1{
+      color: $accent-color;
+      text-transform: none;
+      font-style: italic;
+      letter-spacing:2px;
+      font-weight: $fw-light;
+      width:100%;
+      font-size: $fz-h1-custom;
+      margin-bottom:2em;
+
+    }
+
+    div {
+      padding: 2em 5em 1.5em 5em;
+      background-color: $white;
+
+
+      div {
+        display:flex;
+        justify-content: center;
+        position:relative;
+        a.btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $accent-color;
+          color: $white;
+          position: absolute;
+          bottom: -3em;
+          width: 60%;
+          padding: 0.7em;
+          font-size: $fz-h5;
+          font-weight: $fw-light;
+          text-transform: uppercase;
+          transition: $global-transition;
+          border: 3px $accent-color solid;
+          &:hover{
+          transition: $global-transition;
+          background:$white;
+            border: 3px $accent-color solid;
+          color:$accent-color;
+        }
+        }
+      }
+
+    h2{
+      font-weight: $fw-regular;
+      font-style: italic;
+      letter-spacing: -1px;
+    }
+    }
+  }
+  div.right-side{
+    transition: $global-transition;
+    img{
+      box-shadow: -12px -12px 44px rgba(26, 22, 49, 0.21);
+
+    }
+    &:hover{
+
+      transform: translate(0, -1em);
+      transition: $global-transition;
+
+    }
+  }
+}
+
+
+//SECTION NEWSLETTER
+
+section.infolettre{
+  display:flex;
+  justify-content: center;
+
+
+
+  div.wrapper{
+    background-color: $light-shade;
+    width:90%;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 6px 7px 17px rgba(26, 22, 49, 0.2);
+    h1{
+      font-style: italic;
+      text-transform: none;
+      font-weight: $fw-medium;
+      margin-bottom:0;
+    }
+    p{
+      padding: 3em;
+      width:50%
+    }
+
+    input{
+      width:33%;
+      padding:2em;
+      box-shadow: 6px 7px 17px rgba(26, 22, 49, 0.2);
+      border-radius:1px;
+      color: $accent-color;
+    }
+    input::placeholder{
+      color: $accent-color;
+
+    }
+    a.btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $accent-color;
+      color: $white;
+      margin: 3em;
+
+      width: 15%;
+      padding: 0.7em;
+      border-radius: 39px;
+      font-size: $fz-h5;
+      font-weight: $fw-light;
+      text-transform: uppercase;
+      transition: $global-transition;
+      border: 3px $accent-color solid;
+
+      &:hover {
+        transition: $global-transition;
+        background: $white;
+        border: 3px $accent-color solid;
+        color: $accent-color;
+      }
+    }
+  }
+
+
+}
+
+
+
+// MEDIA QUERIES
+
+//MOBILE
+
+@media screen and (max-width: $vw-large) {
+  header.h-accueil{
+    width: auto;
+    h4{
+      display:none;
+    }
+  }
+
+  section.hero-accueil {
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    div.left-side{
+      padding:1.5em;
+      p{
+        margin-bottom:2em;
+        width:100%;
+      }
+      img{
+        width:40%;
+
+      }
+    }
+    div.right-side {
+      margin-top:2em;
+      img {
+      width:100%;
+        height: 400px;
+        box-shadow:none;
+      }
+    }
+  }
+
+  section.info-vente{
+    margin-bottom:3em;
+    div.wrapper{
+      width:90%;
+
+      h3{
+        font-size: $fz-h2-custom;
+      padding-right:0;
+      }
+      p{
+        padding: 0;
+      }
+    }
+  }
+
+  section.contenu{
+    div.wrapper{
+      display:flex;
+      flex-direction:column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-top:5em;
+      article{
+    margin:2em 0 2em 0;
+        justify-content: space-around;
+        width:50%;
+
+      }
+    }
+  }
+  section.info-accueil{
+    padding: 5em 0 5em 0;
+    div.wrapper{
+      div{
+        width:65%;
+        padding:0.6em;
+        p{
+          padding:2em 0.5em 2em 0.5em;
+        }
+      }
+      iframe{
+        margin-top:-8em;
+      }
+    }
+  }
+
+  section.pecheurs{
+    h1{
+      font-size: $fz-h2-custom;
+    }
+    div.wrapper{
+      div{
+        img{
+          width:100%;
+        }
+        div.item:not(:first-child){
+          display:none;
+        }
+        div.upper{
+
+        }
+      }
+    }
+  }
+  section.pub{
+    flex-direction:column;
+    div.left-side{
+      width: 100%;
+      padding:2em;
+      h1{
+        font-size: $fz-h4;
+      }
+      div{
+        padding: 1em 1.5em 1.5em 1.5em;
+        h2{
+          font-size: $fz-h2-mobile;
+        }
+        div {
+          a.btn {
+            width: 80%;
+            font-size: $fz-normal;
+            padding: 0.7em;
+
+          }
+        }
+      }
+
+    }
+    div.right-side{
+      margin-top: -5em;
+      z-index: -1;
+      img{
+        width:100%;
+        height:auto;
+      }
+    }
+
+  }
+  section.infolettre{
+    h1 {
+      font-size: $fz-h2-custom;
+    }
+    div.wrapper {
+      p {
+        width: 100%;
+        padding: 1em;
+      }
+      input{
+        margin-top:1em;
+        width:90%;
+      }
+      a.btn{
+        width: 50%;
+        padding:0.3em;
+      }
+    }
+  }
+}
+
+//TABLETTE
+
+@media screen and (max-width: $vw-mobile){
+  section.contenu{
+    div.wrapper{
+      article{
+        width:80%;
+
+      }
+
+
+    }
+  }
+  section.info-accueil {
+    div.wrapper {
+      div {
+        width: 85%;
+      }
+    }
+  }
+  section.pub{
+
+    div.left-side{
+
+      div{
+
+
+        div {
+          a.btn {
+            width: 100%;
+            font-size: $fz-normal;
+            padding: 0.4em;
+
+          }
+        }
+      }
+
+    }
+
+
+
+  }
+
+}
+@media screen and (min-width: $vw-large){}
+
+
 
 //MENU
 
